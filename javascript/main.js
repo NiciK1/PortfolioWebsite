@@ -38,4 +38,4 @@ const LightDarkModeSwitcher = () => {
     }
 }
 
-LightDarkBtn.addEventListener("click", LightDarkModeSwitcher)
+LightDarkBtn.addEventListener("click", LightDarkModeSwitcher);
