@@ -1,64 +1,209 @@
 html, body{
     margin: 0px;
-    /* background-color: rgb(37, 34, 34); */
-    background-color: white;
+    background-color: rgb(9, 0, 36);
 }
+
+
+/* Dark Mode */
+
+#LightModeBody{
+    background-color: #67B7D1;
+}
+
+#LightModeNavBar {
+    background-color: #67B7D1;
+}
+
+#LightModeIntroHelloMyNameIs {
+    color: #000C66;
+}
+
+#LightModeNavContactButton{
+    border: 2px solid #000C66;
+    background-color: #000C66;
+}
+
+#LightModeNavContactButton:hover{
+    background-color: transparent;
+}
+
+#LightModeNavLightDarkMode{
+    background-color:#000C66;
+    border: 2px solid #000C66;
+}
+
+
+
+
+
+
+
+
 
 /* Navigation Bar (nav-) */
 
+
+
 nav {
-    /* background-color: rgb(52, 47, 47); */
-    background-color: rgb(103, 101, 101);
+
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    margin: 10px;
+    justify-content: right;
+    margin: 0px;
     border-radius: 7px;
     align-items: center;
+    position: fixed;
+    width: 100%; 
+    background-color: rgb(9, 0, 36);
 }
 
-#navListOfElements {
+.navListOfElements {
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
     padding: 15px;
     align-items: center;
+    justify-content: right;
 }
 
-#navListOfElements li a{
+.navListOfElements li a{
     text-decoration: none;
     color: white;
-    margin: 25px; 
+    margin: 0px 25px; 
     font-family: poppins;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 
-#navSpaceHolder{
-    font-family: rubik;
+/* Contact Button */
+
+.navContactButton{
+    margin: 0px 50px 0px 20px;
+    border: 2px solid rgb(107, 173, 127);
+    padding: 8px 0px;
+    border-radius: 5px;
+    text-decoration: none;
     color: white;
-    font-size: 2.5rem;
-    margin: 0px 60px;
+    margin: 0px 25px; 
+    font-family: poppins;
+    font-size: 0.9rem;
+}
+
+.navContactButton:hover{
+    background-color: rgb(107, 173, 127);
 }
 
 
-/* About Me (aboutME) */
+.navContactButton a {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .navContactButton a:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .navContactButton:hover a {
+    padding-right: 25px;
+  }
+  
+  .navContactButton:hover a:after {
+    opacity: 1;
+    right: 0;
+  }
+
+/* Contact button done */
+
+.navBoxLogo{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+}
+
+.navLogo a{
+    color: white;
+    font-family: roboto;
+    display: flex;
+    align-self: center;
+    font-size: 3rem;
+    margin: 10px;
+    margin-left: 50px;
+    float: left;
+    text-decoration: none;
+}
+
+
+.navLightDarkMode {
+    background-color: rgb(107, 173, 127);
+    margin-right: 30px;
+    border-radius: 10px;;
+}
+
+.navLightDarkModeText{
+    color: white;
+    font-family: roboto;
+    margin: 10px;
+}
+
+.navLightDarkMode:hover{
+    cursor: pointer;
+}
+
+
+/* Introduction (intro) */
+
+#intro {
+    display: flex;
+    padding-top: 300px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.introMainBox {
+    width: 60%;
+    display: flex;
+}
+
+.introMainBoxText{
+    color: white;
+    font-family: poppins;
+    font-size: 3rem;
+}
+
+.introHelloMyNameIs{
+    color: rgb(107, 173, 127);
+    font-size: 1.5rem;
+    font-family: "merriweather";
+}
+
+
+/* About Me (aboutMe) */
 
 #aboutMe {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-#aboutMeMainBox{
+.aboutMeMainBox{
     display: flex;
-    border: 3px solid rgba(220, 220, 220, 0.6);
-    border-radius: 5px;
-    margin: 30px;
-
+    width: 60%;
+    margin: 450px 0px;
 }
 
-#aboutMeMainBoxText{
-    font-family: poppins;
-    font-weight: 700;
-    font-size: 2.2rem;
-    padding: 0px 30px;
-    
+.aboutMeMainParagraph{
+    color: white;
+    font-family: "source sans pro";
+    font-size: 2rem;
+    width: 50%;
+    line-height: 1.6;
 }

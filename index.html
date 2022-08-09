@@ -16,26 +16,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <ul id = "navListOfElements">
+        <nav class = "navBar">
+            <div class = "navBoxLogo">
+                <h2 class = "navLogo"><a href="#intro">N</a></h2>
+            </div>
+            <div class = "navLightDarkMode">
+                <p class = "navLightDarkModeText">Light Mode</p>
+            </div>
+            <ul class = "navListOfElements">
                 <li class = "navElements"><a href="#aboutMe">About Me</a></li>
                 <li class = "navElements"><a href="#">Projects</a></li>
-                <li id = "navSpaceHolder">N</li>
                 <li class = "navElements"><a href="#">Skills</a></li>
-                <li class = "navElements"><a href="#">Contact</a></li>
+                <li class = "navContactButton"><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id = "aboutMe">
-            <div id = "aboutMeMainBox">
-                <h1 id = "aboutMeMainBoxText">Hello my name is <br> Nicolas. <br><br> I am a full-stack <br> engineer based in <br> Germany</h1>
+        <section id = "intro">
+            <div class = "introMainBox">
+                <h1 class = "introMainBoxText"> <a class = "introHelloMyNameIs">Hello, my name is </a><br> Nicolas Kelbel. <br><br> I am a Web developer <br> engineer based in Germany.</h1>
             </div>    
         </section>
-
+        <section id = "aboutMe">
+            <div class = "aboutMeMainBox">
+                <p class = "aboutMeMainParagraph">Hi. My name is Nicolas. I like creating and designing websites and applications. Although I am based in Germany, I am abale to speak fluent English. I participated in many coding couses such as the full-stack software engineer course availiable on Codecadmey. I started learning Web development on Codecademy for about 2 months now. This course teaches HTML, CSS, JavaScript and more. A full-stack developer is able to complete a whole project by himself and therefor this course teaches everything to be able to complete projects. I am capable in designing and creating intermediate level websites. I am also very capable of working in a team.</p>
+            </div>
+        </section>
     </main>
 </body>
 </html>
