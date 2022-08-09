@@ -40,7 +40,7 @@ html, body{
 
 
 
-/* Navigation Bar (nav-) */
+/* Navigation Bar (nav) */
 
 
 
@@ -50,7 +50,6 @@ nav {
     flex-flow: row wrap;
     justify-content: right;
     margin: 0px;
-    border-radius: 7px;
     align-items: center;
     position: fixed;
     width: 100%; 
@@ -206,4 +205,105 @@ nav {
     font-size: 2rem;
     width: 50%;
     line-height: 1.6;
+}
+
+/* Projects */
+
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.projectsMainBox{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.projectsBoxes{
+    width: 80%;
+    border: 1px solid rgb(13, 0, 51);
+    border-radius: 20px;
+    height: 500px;
+    margin: 40px;
+    background-color: rgb(13, 0, 51);
+    object-fit: contain;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projectsImages{
+    width: auto;
+    object-fit: contain;
+    width: 50%;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.projectsText{
+    color: white;
+    font-family: roboto;
+    margin: 30px;
+    font-size: 1.5rem;
+}
+
+.projectsTitle{
+    color: white;
+    font-family: poppins;
+    font-size: 2.2rem;
+}
+
+
+/* Skills (skills)*/
+#skills{
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.skillsMainBox{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.skillsTitle{
+    color: white;
+    font-family: poppins;
+    font-size: 2.2rem;
+}
+
+.skillsText{
+    color: white;
+    font-family: roboto;
+    margin: 30px;
+    font-size: 1.5rem;
+}
+
+
+/* Contact (contact) */
+
+#contact{
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contactMainBox{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
 }
