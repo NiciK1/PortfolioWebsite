@@ -7,11 +7,11 @@ html, body{
 /* Dark Mode */
 
 #LightModeBody{
-    background-color: #67B7D1;
+    background-color: rgb(103,183,209);
 }
 
 #LightModeNavBar {
-    background-color: #67B7D1;
+    background-color: rgb(103,183,209);
 }
 
 #LightModeIntroHelloMyNameIs {
@@ -32,7 +32,10 @@ html, body{
     border: 2px solid #000C66;
 }
 
-
+#LightModeProjectsBoxes{
+    background-color: rgb(2, 57, 139);
+    border: 1px solid rgb(2, 57, 139);
+}
 
 
 
@@ -325,4 +328,29 @@ nav {
     color: white;
     font-family: roboto;
     font-size: 1.5rem;
+}
+
+
+
+
+@media only screen and (max-width: 1400px) {
+
+    .projectsMainBox{
+        width: 90%;
+    }
+    .projectsBoxes{
+        flex-flow: column nowrap;
+    }
+    .projectsImages{
+        width: 70%;
+    }
+
+
+    .aboutMeMainParagraph{
+        width: 90%;
+    }
+    .aboutMeMainBox{
+        width: 80%;
+        justify-content: center;
+    }
 }

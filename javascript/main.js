@@ -23,7 +23,7 @@ const darkmode = () => {
     introHelloMyNameIs.removeAttribute("id");
     navBar.removeAttribute("id");
     body.removeAttribute("id");
-    LightDarkBtn.removeAttribute("id")
+    LightDarkBtn.removeAttribute("id");
     LightDarkBtnText.innerHTML = "Light Mode";
     Dark = true;
 }
